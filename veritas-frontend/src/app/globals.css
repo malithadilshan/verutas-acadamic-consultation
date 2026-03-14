@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-blue-950: #0f172a;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #0f172a; /* Deep Navy Blue */
+  --accent: #D4AF37; /* Gold/Champagne */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Using light mode as default for corporate premium feel, but leaving dark mode vars */
+    --background: #fafafa;
+    --foreground: #0f172a;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
